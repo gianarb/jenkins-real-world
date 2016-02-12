@@ -48,3 +48,11 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+section p span {
+    background: #396172;
+    color: white;
+    border-radius: 14%;
+    padding: 3px;
+    font-size: 0.8em;
+}
