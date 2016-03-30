@@ -4,10 +4,15 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Jenkins in the Real World</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="In this talk I will share the
+        CurrencyFair experience, how our IT Team made of 40 engineers manage
+        CurrencyFair delivery with GitHub, Jenkins, Hubot and Slack on
+        different environments. Artifact, pipeline and some Jenkins's plugins
+        in order to create the most comfortable delivery flow for your
+        projects.">
+		<meta name="author" content="Gianluca Arbezzano">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -41,15 +46,93 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Continuous Delivery</h1>
+					<h3>Jenkins in the Real World</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>by <a href="http://gianarb.it">Gianluca Arbezzano</a> / <a href="http://currencyfair.com">@CurrencyFair</a></small>
 					</p>
 				</section>
 
-			</div>
+				<section>
+                    <h1>Gianluca Arbezzano</h1>
+                    <h2>Software Engineer at CurrencyFair</h2>
+				</section>
 
+				<section>
+                    <p>
+                        <h3>OpenSource maintainer</h3>
+                        <span class="fragment" data-fragment-index="1">
+                            <img src="img/vim.png" width="200px">
+                        </span>
+                        <span class="fragment" data-fragment-index="2">
+                            <img src="img/influxdb.jpg" width="200px">
+                        </span>
+                        <span class="fragment" data-fragment-index="3">
+                            <img src="img/doctrine.png" width="200px">
+                        </span>
+                        <span class="fragment" data-fragment-index="4">
+                            <img src="img/pennyphp.png" width="200px">
+                        </span>
+                    </p>
+                    <p><a href="https://twitter.com/gianarb" target="_blank">twitter.com/gianarb</a> - <a href="https://github.com/gianarb" target="_blank">github.com/gianarb</a></p>
+				</section>
+
+				<section data-background="img/currencyfair.png">
+				</section>
+
+				<section>
+                    <p>We don't</p>
+                    <h3>Istall a new Jenkins server</h3>
+				</section>
+
+				<section data-background="img/clap.gif">
+				</section>
+
+				<section>
+                    <p>We don't</p>
+                    <h3>understand how works a specific plugin</h3>
+				</section>
+
+				<section>
+                    <p>We don't</p>
+                    <h3>learn how put your symfony application under CI</h3>
+				</section>
+
+				<section>
+                    <p>In first because we work with ZF</p>
+                    <h3>but you don't care about it! We will be agnostic</h3>
+				</section>
+
+				<section>
+                    <h3>About the ecosystem</h3>
+                    <ul>
+                        <li class="fragment" data-fragment-index="1">~40 employee</li>
+                        <li class="fragment" data-fragment-index="1">5 teams</li>
+                    </ul>
+				</section>
+
+				<section>
+                    <h3>Our stack</h3>
+                    <ul>
+                        <li class="fragment" data-fragment-index="1">3 PHP applications and different libraries</li>
+                        <li class="fragment" data-fragment-index="1">1 Java application and different libraries</li>
+                        <li class="fragment" data-fragment-index="1">Other different repositories</li>
+                    </ul>
+				</section>
+
+				<section data-background="img/cd.gif">
+				</section>
+
+				<section>
+                    <img src="img/focus.jpg">
+                    <p>Developers are great people but they have some problem of focus</p>
+				</section>
+
+				<section>
+                    <h2>Thanks</h2>
+                    <p><a target="_blank" href="http://gianarb.it">gianarb.it</a></p>
+				</section>
+			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
