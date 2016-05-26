@@ -7,10 +7,7 @@
 // Include theme-specific fonts
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 
-$backgroundColor: #fff;
-
-$mainColor: #222;
-$headingColor: #222;
+$backgroundColor: #1e2d5e;
 
 $mainFontSize: 38px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
@@ -18,9 +15,9 @@ $headingFont: 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
-$headingColor: #F2642C;
+$headingColor: #FFF;
 $headingFontWeight: 600;
-$linkColor: #245462;
+$linkColor: #EC1B23;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -29,21 +26,38 @@ $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
-section.has-dark-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #fff;
-	}
-}
-
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
-section p span {
-    background: #396172;
-    color: white;
-    border-radius: 14%;
-    padding: 3px;
-    font-size: 0.8em;
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+    margin: 0px 0px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.reveal section img .bg-white{
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/*********************************************
+ * CODE
+ *********************************************/
+.reveal pre {
+    background: #FFF;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    text-align: left;
+    font-size: 0.55em;
+    font-family: monospace;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 }

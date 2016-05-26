@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/gianarb_cf.css" id="theme">
+		<link rel="stylesheet" href="css/theme/thumpflow.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/github-gist.css">
@@ -46,6 +46,26 @@
 					<p>
 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
 					</p>
+				</section>
+
+				<section>
+                    <pre><code lang="php">
+class Foo {
+  var $bar;
+
+  function setBar($value) {
+    $this->bar = $value;
+  }
+
+  function someFunction($param) {
+    echo $param.$this->bar."<br/>";
+  }
+}
+
+$foo = new Foo();
+$foo->setBar("Charles");
+$foo->someFunction("Hello, ");
+                    </code></pre>
 				</section>
 
 			</div>
